@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Trans, withNamespaces } from 'react-i18next';
-import { REPOSITORY, LANGUAGES, PRIVACY_POLICY_LINK } from '../../helpers/constants';
+import { LANGUAGES } from '../../helpers/constants';
 import i18n from '../../i18n';
 
 import './Footer.css';
