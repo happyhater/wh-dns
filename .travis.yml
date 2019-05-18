@@ -55,9 +55,9 @@ matrix:
         provider: releases
         api_key: $GITHUB_TOKEN
         file:
-          - dist/AdGuardHome_*
+          - dist/whitehat_*
         on:
-          repo: AdguardTeam/AdGuardHome
+          repo: happyhater/wh-dns
           tags: true
         draft: true
         file_glob: true

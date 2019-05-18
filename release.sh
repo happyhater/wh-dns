@@ -9,17 +9,17 @@ version=`git describe --abbrev=4 --dirty --always --tags`
 f() {
 	make cleanfast; CGO_DISABLED=1 make
 	if [[ $GOOS == darwin ]]; then
-	    zip dist/AdGuardHome_"$version"_MacOS.zip AdGuardHome README.md LICENSE.txt
+	    zip dist/whitehat_"$version"_MacOS.zip whitehat README.md LICENSE.txt
 	elif [[ $GOOS == windows ]]; then
-	    zip dist/AdGuardHome_"$version"_Windows_"$GOARCH".zip AdGuardHome.exe README.md LICENSE.txt
+	    zip dist/whitehat_"$version"_Windows_"$GOARCH".zip whitehat.exe README.md LICENSE.txt
 	else
-	    rm -rf dist/AdguardHome
-	    mkdir -p dist/AdGuardHome
-	    cp -pv {AdGuardHome,LICENSE.txt,README.md} dist/AdGuardHome/
+	    rm -rf dist/whitehat
+	    mkdir -p dist/whitehat
+	    cp -pv {whitehat,LICENSE.txt,README.md} dist/whitehat/
 	    pushd dist
-	    tar zcvf AdGuardHome_"$version"_"$GOOS"_"$GOARCH".tar.gz AdGuardHome/{AdGuardHome,LICENSE.txt,README.md}
+	    tar zcvf whitehat_"$version"_"$GOOS"_"$GOARCH".tar.gz whitehat/{whitehat,LICENSE.txt,README.md}
 	    popd
-	    rm -rf dist/AdguardHome
+	    rm -rf dist/whitehat
 	fi
 }
 

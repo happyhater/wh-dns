@@ -7,10 +7,10 @@ const Status = props => (
     <div className="status">
         <Card bodyType="card-body card-body--status">
             <div className="h4 font-weight-light mb-4">
-                You are currently not using AdGuard Home
+                You are currently not using WhiteHat DNS
             </div>
             <button className="btn btn-success" onClick={props.handleStatusChange}>
-                Enable AdGuard Home
+                Enable WhiteHat DNS
             </button>
         </Card>
     </div>
