@@ -1,0 +1,6 @@
+{
+  "version": "v1.0",
+  "announcement": "WhiteHat DNS is now available!",
+  "announcement_url": "https://whitehat.ro",
+  "selfupdate_min_version": "v0.0"
+}
