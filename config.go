@@ -131,7 +131,7 @@ var config = configuration{
 		},
 	},
 	Filters: []filter{
-		{Filter: dnsfilter.Filter{ID: 1}, Enabled: true, URL: "https://whitehat.ro/~zmeu/dns/filter.dat", Name: ""},
+		{Filter: dnsfilter.Filter{ID: 1}, Enabled: true, URL: "https://whitehat.ro/~zmeu/dns/filter.txt", Name: ""},
 	},
 	DHCP: dhcpd.ServerConfig{
 		LeaseDuration: 86400,
