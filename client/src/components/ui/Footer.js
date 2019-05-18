@@ -27,12 +27,6 @@ class Footer extends Component {
                             </div>
                         </div>
                         <div className="footer__column">
-                            <a href={REPOSITORY.URL} className="footer__link" target="_blank" rel="noopener noreferrer">
-                                <Trans>homepage</Trans>
-                            </a>
-                            <a href={PRIVACY_POLICY_LINK} className="footer__link" target="_blank" rel="noopener noreferrer">
-                                <Trans>privacy_policy</Trans>
-                            </a>
                             <a href="mailto:zmeu@whitehat.ro" className="btn btn-outline-primary btn-sm footer__link footer__link--report" target="_blank" rel="noopener noreferrer">
                                 <Trans>report_an_issue</Trans>
                             </a>

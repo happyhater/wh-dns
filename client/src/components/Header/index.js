@@ -6,7 +6,6 @@ import { Trans, withNamespaces } from 'react-i18next';
 
 import Menu from './Menu';
 import Version from './Version';
-import logo from '../ui/svg/logo.svg';
 import './Header.css';
 
 class Header extends Component {
@@ -41,7 +40,6 @@ class Header extends Component {
                         <div className="col col-lg-3">
                             <div className="d-flex align-items-center">
                                 <Link to="/" className="nav-link pl-0 pr-1">
-                                    <img src={logo} alt="" className="header-brand-img" />
                                 </Link>
                                 {!dashboard.proccessing && dashboard.isCoreRunning &&
                                     <span className={badgeClass}>
